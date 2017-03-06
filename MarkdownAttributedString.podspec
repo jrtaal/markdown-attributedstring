@@ -23,11 +23,11 @@ and returns an NSAttributedString with markdown tags replaced by CoreText format
 
                        DESC
 
-  s.homepage         = 'https://gitlab.bitnomica.com/bitnomica/MarkdownAttributedString'
+  s.homepage         = 'https://gitlab.bitnomica.com/bitnomica/MarkDownAttributedString'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'NO', :file => 'LICENSE' }
   s.author           = { 'Jacco Taal' => 'jacco@bitnomica.com' }
-  s.source           = { :git => 'git@gitlab.bitnomica.com:bitnomica/MarkdownAttributedString.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@gitlab.bitnomica.com:bitnomica/MarkDownAttributedString.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
