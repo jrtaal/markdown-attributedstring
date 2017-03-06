@@ -6,13 +6,19 @@
 //  Copyright (c) 2017 Jacco Taal. All rights reserved.
 //
 
+
 #import "NSAppDelegate.h"
+#import "NSViewController.h"
 
 @implementation NSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+
+    NSViewController * vc = [[NSViewController alloc] init];
+    self.window.rootViewController = vc;
+    
     return YES;
 }
 

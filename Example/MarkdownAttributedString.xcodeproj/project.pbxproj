@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		CF4AA224402A6992346D20A9 /* Pods_MarkdownAttributedString_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B176E3B70C03809148C792CE /* Pods_MarkdownAttributedString_Tests.framework */; };
+		E0E152891E6D3349005CCA01 /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = E0E152881E6D3349005CCA01 /* NOTICE */; };
+		E0E1528D1E6D3651005CCA01 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 25A149E41A69152300B7BAC9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F5D12799694D4883CE2CA80 /* MarkdownAttributedString.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MarkdownAttributedString.podspec; path = ../MarkdownAttributedString.podspec; sourceTree = "<group>"; };
-		25A149E41A69152300B7BAC9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1F5D12799694D4883CE2CA80 /* MarkdownAttributedString.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MarkdownAttributedString.podspec; path = ../MarkdownAttributedString.podspec; sourceTree = "<group>"; };
+		25A149E41A69152300B7BAC9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MarkdownAttributedString_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkdownAttributedString_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,7 +66,8 @@
 		9E5275E5115E901066A0716B /* Pods-MarkdownAttributedString_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkdownAttributedString_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarkdownAttributedString_Example/Pods-MarkdownAttributedString_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AC8EDD26F95A3AFF50F3E148 /* Pods-MarkdownAttributedString_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkdownAttributedString_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarkdownAttributedString_Tests/Pods-MarkdownAttributedString_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B176E3B70C03809148C792CE /* Pods_MarkdownAttributedString_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarkdownAttributedString_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC9B03D02CE30C21FD27DADD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BC9B03D02CE30C21FD27DADD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E0E152881E6D3349005CCA01 /* NOTICE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
 		E7941FA1ACFD9F70C2776056 /* Pods-MarkdownAttributedString_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkdownAttributedString_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarkdownAttributedString_Tests/Pods-MarkdownAttributedString_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F30457F47034766E8244437C /* Pods_MarkdownAttributedString_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarkdownAttributedString_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -180,6 +183,7 @@
 			children = (
 				1F5D12799694D4883CE2CA80 /* MarkdownAttributedString.podspec */,
 				25A149E41A69152300B7BAC9 /* README.md */,
+				E0E152881E6D3349005CCA01 /* NOTICE */,
 				BC9B03D02CE30C21FD27DADD /* LICENSE */,
 			);
 			name = "Podspec Metadata";
@@ -247,7 +251,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = NS;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Jacco Taal";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -279,6 +283,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E1528D1E6D3651005CCA01 /* README.md in Resources */,
+				E0E152891E6D3349005CCA01 /* NOTICE in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -459,14 +465,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -499,13 +510,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
