@@ -32,8 +32,8 @@ and returns an NSAttributedString with markdown tags replaced by CoreText format
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MarkdownAttributedString/Classes/**/*'
-  
+s.source_files = 'MarkdownAttributedString/Classes/*.{h,m,c}'
+
   # s.resource_bundles = {
   #   'MarkdownAttributedString' => ['MarkdownAttributedString/Assets/*.png']
   # }
