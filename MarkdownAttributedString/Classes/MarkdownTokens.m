@@ -15,19 +15,21 @@
 //
 
 const char* markdownnames[] = {
-  "EM",
-  "STRONG",
-  "STRONGEM",
-  "STRIKETHROUGH",
-  "HEADER",
-  "MULTILINEHEADER",
-  "URL",
-  "HREF",
-  "PARAGRAPH",
-  "NEWLINE",
-  "BULLETSTART",
-  "LISTSTART",
-  "MARKDOWNCODESPAN",
-  "WHITESPACE"
-  "UNKNOWN"
+    "EM",
+    "STRONG",
+    "STRONGEM",
+    "STRIKETHROUGH",
+    "HEADER",
+    "MULTILINEHEADER",
+    "URL",
+    "HREF",
+    "PARAGRAPH",
+    "NEWLINE",
+    "BULLETSTART",
+    "LISTSTART",
+    "MARKDOWNCODESPAN",
+    "MARKDOWNCODESTART",
+    
+    "WHITESPACE"
+    "UNKNOWN"
 };

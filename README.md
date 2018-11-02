@@ -1,4 +1,3 @@
-
 A Markdown NSAttributedString Parser
 ====================================
 
@@ -55,10 +54,11 @@ http://google.com urls
 Example
 -------
 
+```
 NSAttributedStringMarkdownParser* parser = [[NSAttributedStringMarkdownParser alloc] init];
 NSAttributedString* string = [parser attributedStringFromMarkdownString:
 @"This is __rad__.""];
-
+```
 See the Catalog application included with the project for more examples.
 
 
@@ -82,3 +82,15 @@ Jacco Taal, jacco@bitnomica.com
 ## License
 
 MarkdownAttributedString is All rights reserved. See the LICENSE file for more info.
+
+## Unicode Support
+
+This supports unicode €, éáø 
+
+
+### Code
+
+```python
+def func(a: int, b: int):
+    return a + b
+```

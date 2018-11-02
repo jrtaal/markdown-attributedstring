@@ -17,13 +17,4 @@
 # limitations under the License.
 #
 
-flex --prefix=markdown --nounput markdown.grammar
-
-cat MarkdownTokenizerPrefix > MarkdownTokenizer.cpp
-cat lex.markdown.c >> MarkdownTokenizer.cpp
-
-rm lex.markdown.c
-
-mv MarkdownTokenizer.cpp ../src/MarkdownTokenizer.m
-cp MarkdownTokens.cpp ../src/MarkdownTokens.m
-cp MarkdownTokens.h ../src/MarkdownTokens.h
+flex --prefix=markdown --nounput -DYY_NOINPUT=1 -8 markdown.grammar

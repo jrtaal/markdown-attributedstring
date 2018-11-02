@@ -1,5 +1,20 @@
+%{
+
+#include "MarkdownTokens.h"
+
+%}
+
 %option case-insensitive
 %option reentrant
+
+ASC     [\x00-\x7f]
+ASCN    [\x00-\t\v-\x7f]
+U       [\x80-\xbf]
+U2      [\xc2-\xdf]
+U3      [\xe0-\xef]
+U4      [\xf0-\xf4]
+
+UANY    {ASC}|{U2}{U}|{U3}{U}{U}|{U4}{U}{U}{U}
 
 h              [0-9a-f]
 nonascii       [\200-\377]
@@ -32,6 +47,7 @@ strong         {strong1}|{strong2}
 strongem       {strongem1}|{strongem2}
 strikethrough  ~~.*?~~
 codespan       `.*?`
+codeblockstart ^```.*$
 
 url            {protourl}|{optprotourl}
 
@@ -51,12 +67,15 @@ nl             \n|\r\n|\r|\f
 {href}                          {markdownConsume(yytext, MARKDOWNHREF, yyscanner);}
 {bulletstart}                   {markdownConsume(yytext, MARKDOWNBULLETSTART, yyscanner);}
 {liststart}                     {markdownConsume(yytext, MARKDOWNLISTSTART, yyscanner);}
+{codeblockstart}                {markdownConsume(yytext, MARKDOWNCODESTART, yyscanner);}
 
 [ ]{2,}$                        {markdownConsume(yytext, MARKDOWNNEWLINE, yyscanner);}
 [\n]{2,}                        {markdownConsume(yytext, MARKDOWNPARAGRAPH, yyscanner);}
 [ ]{1,}                         {markdownConsume(yytext, MARKDOWNWHITESPACE, yyscanner);}
 [ \n\t\f]                       {markdownConsume(yytext, MARKDOWNWHITESPACE, yyscanner);}
 
+
+{UANY}                          {markdownConsume(yytext, MARKDOWNUNKNOWN, yyscanner); printf("%s", yytext);}
 .                               {markdownConsume(yytext, MARKDOWNUNKNOWN, yyscanner);}
 
 %%
