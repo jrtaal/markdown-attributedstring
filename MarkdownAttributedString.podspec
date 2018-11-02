@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MarkdownAttributedString'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Markdown => NSAttributedString parser '
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ and returns an NSAttributedString with markdown tags replaced by CoreText format
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MarkdownAttributedString/Classes/*.{h,m,c}', 'MarkdownAttributedString/lex.markdown.c'
+  s.source_files = 'MarkdownAttributedString/Classes/*.{h,m,c}'
 
   # s.resource_bundles = {
   #   'MarkdownAttributedString' => ['MarkdownAttributedString/Assets/*.png']
