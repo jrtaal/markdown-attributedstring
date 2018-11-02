@@ -75,7 +75,7 @@ nl             \n|\r\n|\r|\f
 [ \n\t\f]                       {markdownConsume(yytext, MARKDOWNWHITESPACE, yyscanner);}
 
 
-{UANY}                          {markdownConsume(yytext, MARKDOWNUNKNOWN, yyscanner); printf("%s", yytext);}
+{UANY}                          {markdownConsume(yytext, MARKDOWNUNKNOWN, yyscanner);}
 .                               {markdownConsume(yytext, MARKDOWNUNKNOWN, yyscanner);}
 
 %%
